@@ -13,6 +13,8 @@
 body,
 h1,
 h2,
+h3,
+h4,
 p,
 ul {
   margin: 0;
@@ -164,71 +166,6 @@ nav a.nav-link:hover {
   }
 }
 
-#landing-page-image {
-  width: 48%;
-  position: absolute;
-  right: -6%;
-  filter: drop-shadow(3px 3px 24px rgba(0, 0, 0, 0.7));
-}
-
-#scroll-down-container {
-  position: absolute;
-  bottom: 40px;
-  z-index: 4;
-  left: calc(50% - 31.5px);
-}
-
-.scroll-down-animation {
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  color: var(--dirty-white);
-  animation-name: scroll-down-animation;
-  animation-timing-function: cubic-bezier(0.25, 0.53, 0.03, 0.96);
-}
-
-@keyframes scroll-down-animation {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(1, 1.1) translateY(9px);
-  }
-  60% {
-    transform: scale(1, 0.9) translateY(-3px);
-  }
-  70% {
-    transform: scale(1, 1) translateY(0);
-  }
-  75% {
-    transform: scale(1, 1) translateY(2px);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-}
-
-.breath-animation {
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-name: breath;
-  animation-timing-function: cubic-bezier(0.25, 0.53, 0.03, 0.96);
-}
-
-@keyframes breath {
-  0% {
-    transform: scale(1) translateY(0);
-  }
-  50% {
-    transform: scale(1.1) translateY(0);
-  }
-  100% {
-    transform: scale(1) translateY(0);
-  }
-}
-
 /* Main content styles */
 main {
   width: 100%;
@@ -247,12 +184,6 @@ section {
   align-items: center;
 }
 
-section#portfolio {
-  /* background-color: var(--night-gray); */
-  color: var(--dirty-white);
-  background: linear-gradient(rgb(53 39 59), #2b2b32);
-}
-
 section:nth-child(even) {
   background-color: var(--dirty-white);
   color: var(--night-gray);
@@ -262,11 +193,6 @@ section:nth-child(even) {
   height: inherit;
   width: inherit;
   max-width: 70vw;
-}
-
-#landing-page-section {
-  background: linear-gradient(rgba(229, 228, 225, 0), var(--night-gray));
-  background: linear-gradient(rgba(229, 228, 225, 0), #35283b);
 }
 
 /* Footer styles */
@@ -404,3 +330,124 @@ footer {
     margin: 5px 0;
   }
 } */
+#portfolio {
+  height: 100%;
+  padding: 40px 0;
+}
+
+
+#landing-page-image {
+  width: 48%;
+  position: absolute;
+  right: -6%;
+  filter: drop-shadow(3px 3px 24px rgba(0, 0, 0, 0.7));
+}
+
+#scroll-down-container {
+  position: absolute;
+  bottom: 40px;
+  z-index: 4;
+  left: calc(50% - 31.5px);
+}
+
+.scroll-down-animation {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  color: var(--dirty-white);
+  animation-name: scroll-down-animation;
+  animation-timing-function: cubic-bezier(0.25, 0.53, 0.03, 0.96);
+}
+
+@keyframes scroll-down-animation {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(1, 1.1) translateY(9px);
+  }
+  60% {
+    transform: scale(1, 0.9) translateY(-3px);
+  }
+  70% {
+    transform: scale(1, 1) translateY(0);
+  }
+  75% {
+    transform: scale(1, 1) translateY(2px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.breath-animation {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: breath;
+  animation-timing-function: cubic-bezier(0.25, 0.53, 0.03, 0.96);
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+section#portfolio {
+  /* background-color: var(--night-gray); */
+  color: var(--dirty-white);
+  background: linear-gradient(rgb(53 39 59), #2b2b32);
+}
+
+#landing-page-section {
+  background: linear-gradient(rgba(229, 228, 225, 0), var(--night-gray));
+  background: linear-gradient(rgba(229, 228, 225, 0), #35283b);
+}
+
+.project-container {
+  height: 400px;
+  width: 100%;
+  background-color: var(--dirty-white);
+  color: var(--night-gray);
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  box-shadow: -1px 0px 16px 0px rgba(65, 14, 42, 0.45);
+  margin-top: 40px;
+  transition: all 0.2s ease-out;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .project-image {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &:hover {
+    scale: 1.02;
+    border: 1px solid blue;
+    cursor: pointer;
+  }
+}
+
+.project-image {
+  height: 100%;
+  width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.project-text-container {
+  padding: 24px;
+  width: 50%;
+}
