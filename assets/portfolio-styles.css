@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  /* Color variables */
+  --night-gray: #2b2b32;
+  --dark-purple: #55405a;
+  --light-purple: #6e405a;
+  --dirty-white: #e5e4e1;
+}
+
+p {
+  font-weight: lighter;
+}
+
+#portfolio-page-header {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#portfolio-page-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--night-gray);
+  align-items: center;
+}
+
+#project-overview {
+  color: var(--dirty-white);
+  padding: 80px 0;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.case-study-section {
+  background-color: var(--dirty-white);
+  height: 400px;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study-section:nth-child(2n + 1) {
+  background-color: var(--night-gray);
+}
