@@ -1,0 +1,49 @@
+section#portfolio {
+  background-color: var(--night-gray);
+  color: var(--dirty-white);
+}
+
+
+#landing-page-section {
+  background: linear-gradient(rgba(229, 228, 225, 0), var(--night-gray));
+}
+
+.project-container {
+  height: 400px;
+  width: 100%;
+  background-color: var(--dirty-white);
+  color: var(--night-gray);
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  box-shadow: -1px 0px 16px 0px rgba(65, 14, 42, 0.45);
+  margin-top: 40px;
+  transition: all 0.2s ease-out;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .project-image {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &:hover {
+    scale: 1.02;
+    border: 1px solid blue;
+    cursor: pointer;
+  }
+}
+
+.project-image {
+  height: 100%;
+  width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.project-text-container {
+  padding: 24px;
+  width: 50%;
+}

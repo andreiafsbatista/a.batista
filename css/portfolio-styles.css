@@ -9,10 +9,6 @@
   --dirty-white: #e5e4e1;
 }
 
-p {
-  font-weight: lighter;
-}
-
 #portfolio-page-header {
   display: flex;
   flex-direction: column;
@@ -21,32 +17,47 @@ p {
   justify-content: center;
 }
 
-#portfolio-page-section {
+#project-landing-section {
+  background: linear-gradient(rgba(229, 228, 225, 0), var(--night-gray));
+}
+
+.portfolio-page-section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--night-gray);
   align-items: center;
+  color: var(--dirty-white);
 }
 
 #project-overview {
-  color: var(--dirty-white);
   padding: 80px 0;
+  background-color: #212127;
+  box-shadow: 0px 0px 38px 0px rgba(148, 143, 211, 0.205);
+
+  p {
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+#project-overview-grid {
   display: grid;
   gap: 80px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 24px;
 }
 
 .case-study-section {
   background-color: var(--dirty-white);
-  height: 400px;
+  padding: 80px 0;
 }
 
 .column-container {
   display: flex;
   flex-direction: column;
-}
-
-.case-study-section:nth-child(2n + 1) {
-  background-color: var(--night-gray);
+  height: fit-content;
 }

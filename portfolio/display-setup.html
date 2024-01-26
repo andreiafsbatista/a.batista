@@ -8,8 +8,8 @@
     <title>a.batista portfolio</title>
 
     <!-- Files Linked -->
-    <link rel="stylesheet" href="../assets/general-styles.css" />
-    <link rel="stylesheet" href="../assets/portfolio-styles.css" />
+    <link rel="stylesheet" href="../css/general-styles.css" />
+    <link rel="stylesheet" href="../css/portfolio-styles.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -27,7 +27,7 @@
   <body>
     <!-- Header Section -->
     <header>
-      <section id="portfolio-page-section">
+      <section id="project-landing-section" class="portfolio-page-section">
         <div class="section-container">
           <nav id="titlebar">
             <div class="line-below left">
@@ -65,52 +65,152 @@
       </section>
     </header>
 
+
+
+    
     <main>
       <!-- Project Overview -->
-      <div id="portfolio-page-section">
-        <div id="project-overview" class="section-container">
-          <div class="column-container">
-            <h1>Overview</h1>
+      <div id="project-overview" class="portfolio-page-section">
+        <div class="section-container">
+          <h1>Overview</h1>
+          <div id="project-overview-grid">
+            <div class="column-container">
+              <p><b>Year:</b> 2023</p>
+              <p><b>Client:</b> Acro Companion</p>
+              <p><b>Team:</b></p>
+              <p>Product Owner: Lander</p>
+              <p>UX UI Designer: Andreia</p>
+              <p>Full-stack Developer: ?</p>
+            </div>
 
-            <p><b>Date:</b> XXX 2023</p>
-            <p><b>Timeline:</b> XXX 2023</p>
-            <p><b>Team:</b></p>
-            <p>Product Owner: Lander</p>
-            <p>UX UI Designer: Andreia</p>
-            <p>Developer: ?</p>
-          </div>
+            <div class="column-container">
+              <p><b>Background:</b></p>
+              <p>
+                The "Display controller" is a specific part of the Acro
+                Companion application, within the scoring solution offered by
+                AC. It allows real-time control of the information being sent to
+                the different screens during a competition.
+              </p>
+            </div>
 
-          <div class="column-container">
-            <p><b>Background:</b></p>
-            <p>
-              The "Display controller" is a specific part of the Acro Companion
-              application, within the scoring solution offered by AC. It allows
-              real-time control of the information being sent to the different
-              screens during a competition.
-            </p>
-          </div>
+            <div class="column-container">
+              <p><b>Problems:</b></p>
+              <p>
+                The existing screen, created as a MVP with the minimum
+                functionality in mind, lacked a human-centred perspective; ter a
+                certeza que a informação displayed é a correta e facilmente
+                corrigir quando necessário durante uma fast-paced competition.
+              </p>
+            </div>
 
-          <div class="column-container">
-            <p><b>Problems:</b></p>
-            <p>
-              The existing screen, created as a MVP with the minimum
-              functionality in mind, lacked a human-centred perspective; ter a
-              certeza que a informação displayed é a correta e facilmente
-              corrigir quando necessário durante uma fast-paced competition.
-            </p>
+            <div class="column-container">
+              <p><b>Goal:</b></p>
+              <p>test test test</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Case Study -->
+      <!-- Project Description -->
+      <div class="section-container">
+        <div class="case-study-section">
+          <h1>What is "Display controller" and who uses it</h1>
+          <p>
+            The display controller is a feature that let's competition
+            organizers create and configure of the different screens that will
+            display information during the competition. Creation of automatic
+            displays that switch between a group of screens. During the
+            competition, it's used to kee track of the automatic screens,
+            override the loop to send in to correct information or to send in
+            screens that can't be automated (pause, podium...)
+          </p>
+        </div>
 
-      <div class="case-study-section"></div>
+        <div class="case-study-section">
+          <h1>Before redesign - Client feedback</h1>
+          <img
+            id="home-page-logo"
+            src="../assets/img/logo.png"
+            alt="website logo"
+          />
+          <p>
+            Business perspective - the first iteration served the purpose of
+            having the functionality and test with users to adress the
+            usefulness and receive a first roud of feedback of new things to
+            add. and the idea was to invest in a user-friendly interface.
+          </p>
+          <h2>Main problems found</h2>
+          <p>
+            Based on the feedback and the current State Evaluation (problems the
+            screens has)
+          </p>
+          <ul>
+            <li>Users complained about the complexity of the screen</li>
+            <li>A lot of buttons (too much information)</li>
+            <li>A lot of clicks to trigger a screen</li>
+            <li>Can't see the status of the changes</li>
+            <li>More personalization</li>
+            <li>
+              The competition stage can be huge, it's difficult to keep track of
+              what's being displayed on all screens
+            </li>
+            <li>Different tabs to set the screens (back and forward)??????</li>
+          </ul>
+        </div>
 
-      <div class="case-study-section"></div>
+        <div class="case-study-section">
+          <h1>Research</h1>
+          <p>Competition</p>
+          <p>Softwares as inspiration</p>
 
-      <!-- Other Projects (link to the other 3 highlights) -->
-      <div class="ptoject-highlights"></div>
+          <h1>Redesign</h1>
+          <!-- Sketches -->
+          <img
+            id="home-page-logo"
+            src="../assets/img/logo.png"
+            alt="website logo"
+          />
+          <p>Something about sketches</p>
+          <!-- Prototype -->
+          <img
+            id="home-page-logo"
+            src="../assets/img/logo.png"
+            alt="website logo"
+          />
+          <p>
+            Something about prototype The prototype needs to use already some
+            patterns used in the application Usage of the angular material + our
+            components
+          </p>
+        </div>
+
+        <div class="case-study-section">
+          <h1>Feedback Demonstration</h1>
+
+          <!-- Sketches -->
+          <ul>
+            <li>add here</li>
+          </ul>
+        </div>
+
+        <div class="case-study-section">
+          <h1>Comparison</h1>
+
+          <!-- Sketches -->
+          <ul>
+            <li>add here</li>
+          </ul>
+        </div>
+
+        <div class="case-study-section"></div>
+
+        <!-- Other Projects (link to the other 3 highlights) -->
+        <div class="ptoject-highlights"></div>
+      </div>
     </main>
+
+
+
 
     <!-- Footer Section -->
     <footer>
@@ -126,7 +226,7 @@
           world!
         </p>
         <a class="button" href="mailto:andreia.fsb.am@gmail.com"
-          ><p>contact by email</p></a
+          ><p>contact me by email</p></a
         >
       </div>
       <div id="footer-icons-and-rights">
@@ -138,14 +238,14 @@
           >
             <img
               class="footer-icon"
-              src="assets/img/icons/LinkedIn.png"
+              src="../assets/img/icons/LinkedIn.png"
               alt="website logo"
             />
           </a>
           <a href="https://www.instagram.com/rubidos.cartoon/" target="_blank">
             <img
               class="footer-icon"
-              src="assets/img/icons/Instagram.png"
+              src="../assets/img/icons/Instagram.png"
               alt="website logo"
             />
           </a>
